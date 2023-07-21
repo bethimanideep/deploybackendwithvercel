@@ -23,7 +23,7 @@ passport.use(
     {
       clientID: process.env.googleclientid,
       clientSecret: process.env.googlesecret,
-      callbackURL: 'https://legit-lawyer-ega4.onrender.com/user/auth/google/callback',
+      callbackURL: 'https://deploybackendwithvercel.vercel.app/user/auth/google/callback',
       profileFields: ['id', 'displayName', 'picture', 'email'],
     },
     function (accessToken, refreshToken, profile, done) {
